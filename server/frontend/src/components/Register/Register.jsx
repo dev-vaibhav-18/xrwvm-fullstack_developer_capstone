@@ -23,10 +23,7 @@ const Register = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log("Registration form submitted:", {
-      ...formData,
-      password: "[hidden]",
-    });
+    console.log("Registration form submitted");
 
     alert("Registration form submitted!");
   };
@@ -34,7 +31,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <form className="register-form" onSubmit={handleSubmit}>
-        <h2>Register</h2>
+        <h2>Sign Up</h2>
 
         <div className="form-group">
           <label htmlFor="username">Username</label>
@@ -44,7 +41,7 @@ const Register = () => {
             name="username"
             value={formData.username}
             onChange={handleChange}
-            placeholder="Enter username"
+            placeholder="Username"
             required
           />
         </div>
@@ -57,7 +54,7 @@ const Register = () => {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            placeholder="Enter first name"
+            placeholder="First Name"
             required
           />
         </div>
@@ -70,7 +67,7 @@ const Register = () => {
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
-            placeholder="Enter last name"
+            placeholder="Last Name"
             required
           />
         </div>
@@ -83,7 +80,7 @@ const Register = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Enter email"
+            placeholder="email"
             required
           />
         </div>
@@ -96,7 +93,7 @@ const Register = () => {
             name="password"
             value={formData.password}
             onChange={handleChange}
-            placeholder="Enter password"
+            placeholder="Password"
             required
           />
         </div>
